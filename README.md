@@ -1,28 +1,86 @@
 # Welcome to the Integrating With HubSpot I: Foundations Practicum
 
-This repository is for the Integrating With HubSpot I: Foundations course. This practicum is one of two requirements for receiving your Integrating With HubSpot I: Foundations certification. You must also take the exam and receive a passing grade (at least 75%).
+This repository contains my practicum submission for the **Integrating With HubSpot I: Foundations** course.  
+This practicum is one of two requirements for receiving the certification. The other requirement is passing the exam with at least 75%.
 
-To read the full directions, please go to the [practicum instructions](https://app.hubspot.com/academy/l/tracks/1092124/1093824/5493?language=en).
+📖 Full instructions: [Practicum directions](https://app.hubspot.com/academy/l/tracks/1092124/1093824/5493?language=en)
 
-**Put your HubSpot developer test account custom objects URL link here:** https://app.hubspot.com/contacts/l/objects/${custom-obj-number}/views/all/list
+---
 
-___
-## Tips:
-- Commit to your repository often. Even if you make small tweaks to your code, it’s best to be committing to your repository frequently.
-- The subject of the custom object is up to you. Feel free to get creative!
-- Please create a test account and include your private app access token in your repo.
-- Ensure you re-merge any working branches into the main branch.
-- DO NOT ADD YOUR PRIVATE APP TOKEN TO YOUR REPOSITORY. 
+## 🔗 Custom Object Link (Developer Test Account)
 
-## Pre-requisites:
-- Using [Node](https://nodejs.org/en/download) and node packages
-- Using [Express](https://expressjs.com/en/starter/installing.html)
-- Using [Axios](https://axios-http.com/docs/intro)
-- Using [Pug templating system](https://pugjs.org/api/getting-started.html)
-- Using the command line
-- Using [Git and GitHub](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+Here is the required link to the list view of my custom object in my HubSpot developer test account:
 
-## Requirements
-- All work must be your own. During the grading process we will check the revision history. Submissions that do not meet this requirement will not be considered.
-- You must have at least two new routes in your index.js file and one new pug template for the homepage.
-- You must create a developer test account and link to it in your README.md file. Submissions that do not meet this requirement will not be considered.
+👉 [Custom Object List View](https://app-eu1.hubspot.com/contacts/146760714/objects/2-146200606/views/all/list)
+
+---
+
+## ✅ Requirements Completed
+
+- Created a **developer test account** with a private app.  
+- Built a **custom object** (`Games`) with at least 3 properties:
+  - `name` (string)
+  - `publisher` (string)
+  - `price` (number)  
+- Added **3+ records** to the custom object.  
+- Associated the custom object with **Contacts**.  
+- Implemented at least **3 new routes** in `index.js`:
+  - `GET /` → displays custom objects in a table (`homepage.pug`)  
+  - `GET /update-cobj` → shows form to add a new record (`updates.pug`)  
+  - `POST /update-cobj` → creates a new record and redirects home  
+- Added **2 new pug templates** (`homepage.pug`, `updates.pug`).  
+- Linked to the **custom object list view** here in the README.  
+- Merged `working-branch` back into `main`.
+
+---
+
+## ⚡ Tips Followed
+
+- Committed changes frequently with meaningful commit messages.  
+- Did **not** include my private app token in the repository (kept in `.env`).  
+- Used the required stack: Node, Express, Axios, Pug.  
+- Ensured the practicum runs locally with no extra configuration.
+
+---
+
+## 💻 Run Locally
+
+Clone the repo, install dependencies, and run the app:
+
+```bash
+git clone https://github.com/<your-username>/<firstname>-<lastname>-iwh-i-practicum.git
+cd <firstname>-<lastname>-iwh-i-practicum
+
+npm install
+```
+
+Create a `.env` file in the project root:
+
+```
+PORT=3000
+PRIVATE_APP_TOKEN=pat-<your-token-here>
+CUSTOM_OBJECT=2-146200606
+PROPS=name,publisher,price
+```
+
+Run the app:
+
+```bash
+npm start
+```
+
+Visit:  
+👉 [http://localhost:3000](http://localhost:3000) → View the table  
+👉 [http://localhost:3000/update-cobj](http://localhost:3000/update-cobj) → Add a record
+
+---
+
+## 📝 Notes
+
+- This submission is for the **Integrating With HubSpot I: Foundations Practicum** only.  
+- All work is my own, following HubSpot Academy’s instructions.  
+- Private app token is stored locally in `.env` and not committed.
+
+## Contributor
+
+- Will Powell (Frontend Developer)

@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title= title
+    link(rel="stylesheet", href="/public/css/style.css")
+  body
+    h1 Custom Object Table
+    p
+      a(href="/update-cobj") Add/Update this table
+    if !rows || rows.length === 0
+      p No records yet. Try adding one.
+    else
+      table
+        thead
+          tr
+            each col in ['Name','Publisher','Price']
+              th= col
+        tbody
+          each r in rows
+            tr
+              td= r.name || ''
+              td= r.publisher || ''
+              td= r.price != null ? r.price : ''
