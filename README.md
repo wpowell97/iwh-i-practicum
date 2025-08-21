@@ -7,6 +7,14 @@ This practicum is one of two requirements for receiving the certification. The o
 
 ---
 
+## 🖼️ Screenshot
+
+Below is a screenshot of the running application, displaying the custom object records in the homepage table:
+
+![Solution Screenshot](public/images/solution-screenshot.png)
+
+---
+
 ## 🔗 Custom Object Link (Developer Test Account)
 
 Here is the required link to the list view of my custom object in my HubSpot developer test account:
